@@ -128,14 +128,14 @@ function Home() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8">
   {data.map((subject, index) => {
     const theme = getCardTheme(index);
     return (
       <Link 
         to={`/subjects/${subject.id}`} // Add this line to make the whole card clickable
         key={subject.id}
-        className="group block" // Add block display to make the link fill the container
+        className="group block " // Add block display to make the link fill the container
       >
         <div 
           className={`relative overflow-hidden rounded-2xl ${theme.bg} p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20`}
@@ -145,7 +145,7 @@ function Home() {
           <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 group-hover:bg-white/20 transition-all duration-700"></div>
           <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-white/10 group-hover:bg-white/20 transition-all duration-700"></div>
           
-          <div className="relative z-10 h-full flex flex-col">
+          <div className="relative z-10 h-[300px] flex flex-col">
             <div className={`mb-6 flex h-16 w-16 items-center justify-center rounded-2xl ${theme.accent} text-white shadow-lg text-2xl`}>
               {getSubjectIcon(subject.subject_area)}
             </div>
