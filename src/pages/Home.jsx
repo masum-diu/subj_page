@@ -118,7 +118,7 @@ function Home() {
   }
 
   return (
-    <div className="home container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4 uppercase bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
           Explore Popular Subjects
@@ -181,14 +181,7 @@ function Home() {
           </div>
           
           <nav className="flex items-center gap-1">
-            <button
-              onClick={() => handlePageChange(1)}
-              disabled={currentPage === 1}
-              className="px-3 py-1 rounded-md border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 disabled:opacity-50 transition-colors"
-              aria-label="First page"
-            >
-              «
-            </button>
+           
             
             <button
               onClick={() => handlePageChange(currentPage - 1)}
@@ -234,14 +227,7 @@ function Home() {
               Next
             </button>
             
-            <button
-              onClick={() => handlePageChange(totalPages)}
-              disabled={currentPage === totalPages}
-              className="px-3 py-1 rounded-md border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 disabled:opacity-50 transition-colors"
-              aria-label="Last page"
-            >
-              »
-            </button>
+          
           </nav>
         </div>
       )}
