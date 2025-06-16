@@ -122,7 +122,7 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink 
                 to="/packages"
                 onClick={() => setIsOpen(false)}
@@ -134,7 +134,7 @@ const Navbar = () => {
               >
                 Packages
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink 
                 to="/contact"
